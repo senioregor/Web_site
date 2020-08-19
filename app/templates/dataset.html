@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="static/style.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center>
+        <b style="font-size: 60px"> ПРАЙС ЛИСТ</b>
+        {{ data|safe}}
+
+        <form action="{{ url_for('dataset') }}" method="post">
+            <br>
+            <b>Введите назнание работы</b><br><input type="text" name="projectFile">
+            <br>
+            <b>Введите рыночную стоимость работы</b><br><input type="text" name="aqwer">
+            <br>
+            <b>Введите Вашу стоимость работы</b><br><input type="text" name="qwerty">
+            <br>
+            <b>Введите id работы</b><br><input type="text" name="workid">
+            <br>
+            <b>Сравнить</b><br><input type="submit">
+            <br>
+        </form>
+
+    </center>
+
+        {{ htmltext|safe }}
+        {{ htmltext1|safe }}
+    <div id="app">
+        tasks.htmltext11
+
+    </div>
+
+</body>
+</html>
